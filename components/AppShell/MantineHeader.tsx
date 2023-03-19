@@ -18,7 +18,7 @@ import {
   ScrollArea,
   rem,
 } from '@mantine/core';
-import { MantineLogo } from '@mantine/ds';
+
 import { useDisclosure } from '@mantine/hooks';
 import {
   IconNotification,
