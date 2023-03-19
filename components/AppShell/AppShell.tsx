@@ -12,6 +12,7 @@ import {
 } from '@mantine/core';
 import { MantineNavBar } from './MantineNavBar';
 import { MantineHeader } from './MantineHeader';
+import { ReactNode } from 'react';
 export const MantineAppShell = ({ children }: { children: ReactNode }) => {
   const theme = useMantineTheme();
 
