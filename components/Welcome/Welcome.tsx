@@ -25,7 +25,7 @@ export function Welcome() {
 
   return (
     <Center>
-      <Card shadow="xl" radius="xs" p="xl" radius="xl" withBorder>
+      <Card shadow="xl" p="xl" radius="xl" withBorder>
         <Center>
           <div className={classes.inner}>
             <div className={classes.content}>
