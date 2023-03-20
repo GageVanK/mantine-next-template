@@ -27,15 +27,19 @@
     "@mantine/notifications": "6.0.2",
     "@mantine/prism": "6.0.2",
     "@next/bundle-analyzer": "^13.1.6",
+    "@reduxjs/toolkit": "^1.9.3",
     "@tabler/icons": "^1.107.0",
     "@tabler/icons-react": "^2.4.0",
     "cookies-next": "^2.1.1",
     "dayjs": "^1.11.6",
+    "deso-protocol": "^1.1.2",
     "embla-carousel-react": "^7.0.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

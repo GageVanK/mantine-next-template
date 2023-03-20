@@ -1,5 +1,5 @@
 import { createStyles, Card, Center, Title, Text, List, ThemeIcon, Button } from '@mantine/core';
-
+import { identity } from 'deso-protocol';
 import { IconCheck } from '@tabler/icons-react';
 import { GiWaveCrest } from 'react-icons/gi';
 const useStyles = createStyles((theme) => ({
@@ -90,6 +90,7 @@ export function Welcome() {
               </List>
               <Center>
                 <Button
+                  onClick={() => identity.login()}
                   fullWidth
                   radius="xl"
                   leftIcon={<GiWaveCrest size="1rem" />}

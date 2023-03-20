@@ -18,7 +18,7 @@ import {
   ScrollArea,
   rem,
 } from '@mantine/core';
-
+import { identity } from 'deso-protocol';
 import { useDisclosure } from '@mantine/hooks';
 import {
   IconNotification,
@@ -31,6 +31,7 @@ import {
 } from '@tabler/icons-react';
 import { ColorSchemeToggle } from './../ColorSchemeToggle/ColorSchemeToggle';
 import { GiWaveCrest } from 'react-icons/gi';
+
 const useStyles = createStyles((theme) => ({
   link: {
     display: 'flex',
@@ -159,8 +160,11 @@ export function MantineHeader() {
 
           <Group className={classes.hiddenMobile}>
             <ColorSchemeToggle />
-            <Button variant="default">Log in</Button>
+            <Button onClick={() => identity.login()} variant="default">
+              Log in
+            </Button>
             <Button
+              onClick={() => identity.login()}
               leftIcon={<GiWaveCrest size="1rem" />}
               variant="gradient"
               gradient={{ from: 'cyan', to: 'indigo' }}
@@ -192,8 +196,11 @@ export function MantineHeader() {
           <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
           <Group position="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
+            <Button onClick={() => identity.login()} variant="default">
+              Log in
+            </Button>
             <Button
+              onClick={() => identity.login()}
               leftIcon={<GiWaveCrest size="1rem" />}
               variant="gradient"
               gradient={{ from: 'cyan', to: 'indigo' }}
